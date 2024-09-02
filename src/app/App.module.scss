@@ -1,0 +1,67 @@
+/* App.module.scss */
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 5px dashed #ccc; /* 線幅、線のスタイル、カラー */
+  outline-offset: -5px;
+}
+
+.imagePresent {
+  border: none;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.scrollContainer {
+  overflow-y: auto;
+  max-height: 100vh;
+  width: 100%;
+  scrollbar-width: thin; // Firefox用
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 0px; /* スクロールバーの幅 */
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* スクロールバーの色 */
+  border-radius: 10px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.opacitySlider {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 150px;
+}
+
+.sliderLabel {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  color: #fff;
+  background-color: black;
+}
